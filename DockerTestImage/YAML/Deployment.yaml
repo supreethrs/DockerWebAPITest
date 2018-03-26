@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: webapitest
+      app: webapi
   template:
     metadata:
       labels:
-        app: webapitest
+        app: webapi
         component: frontend
     spec:
       containers:
       - name: webapi
-        image: srswebapiimageregistry.azurecr.io/webapi:latest
+        image: srswebapiimageregistry.azurecr.io/webapi
         ports:
         - containerPort: 8080
