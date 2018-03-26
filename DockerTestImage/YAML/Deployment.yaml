@@ -1,0 +1,19 @@
+﻿apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: webapitest
+  template:
+    metadata:
+      labels:
+        app: webapitest
+        component: frontend
+    spec:
+      containers:
+      - name: webapi
+        image: srswebapiimageregistry.azurecr.io/webapi:latest
+        ports:
+        - containerPort: 8080
