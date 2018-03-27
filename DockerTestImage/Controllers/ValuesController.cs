@@ -15,7 +15,7 @@ namespace DockerTestImage.Controllers
         [Route("/")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Supreeth", "R S" };
+            return new string[] { "Supreeth", "R S", "Belur", "Hassan" };
         }
 
         // GET api/values/5
